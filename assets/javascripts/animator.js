@@ -1,4 +1,5 @@
 // -- Copyright 2013, Piotr Falba - Animator - Sprite animation plugin
+// -- https://github.com/piotrfalba/Animator | See license on github page
 /*
 	Usage example:
 	var animator = new Animator({Object} jQuery Dom Object);
