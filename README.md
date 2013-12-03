@@ -14,9 +14,9 @@ animator.define({
 	step: 1,
 	interval: 45
 });
-```
 	
 animator.roar.play();
+```
 
 ### Styles
 ```css
