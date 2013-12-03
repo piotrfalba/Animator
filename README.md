@@ -1,0 +1,59 @@
+Animator
+========
+
+jQuery sprite animation plugin
+
+### JavaScript code:
+```javascript
+var animator = $('#monster').animator();
+animator.define({
+  name: 'roar',
+	addClass: null,
+	start: 1,
+	end: 24,
+	step: 1,
+	interval: 45
+});
+```
+	
+animator.roar.play();
+
+### Styles
+```css
+#monster {
+	width: 192px;
+	height: 192px;
+	background-image: url(../images/monster.png);
+	background-repeat: no-repeat;
+}
+
+#monster.frame-1 { background-position: 0 0; }
+#monster.frame-2 { background-position: -192px 0; }
+#monster.frame-3 { background-position: -384px 0; }
+#monster.frame-4 { background-position: -576px 0; }
+
+#monster.frame-5 { background-position: 0 -192px; }
+#monster.frame-6 { background-position: -192px -192px; }
+#monster.frame-7 { background-position: -384px -192px; }
+#monster.frame-8 { background-position: -576px -192px; }
+
+#monster.frame-9 { background-position: 0 -384px; }
+#monster.frame-10 { background-position: -192px -384px; }
+#monster.frame-11 { background-position: -384px -384px; }
+#monster.frame-12 { background-position: -576px -384px; }
+
+#monster.frame-13 { background-position: 0 -576px; }
+#monster.frame-14 { background-position: -192px -576px; }
+#monster.frame-15 { background-position: -384px -576px; }
+#monster.frame-16 { background-position: -576px -576px; }
+
+#monster.frame-17 { background-position: 0 -768px; }
+#monster.frame-18 { background-position: -192px -768px; }
+#monster.frame-19 { background-position: -384px -768px; }
+#monster.frame-20 { background-position: -576px -768px; }
+
+#monster.frame-21 { background-position: 0 -960px; }
+#monster.frame-22 { background-position: -192px -960px; }
+#monster.frame-23 { background-position: -384px -960px; }
+#monster.frame-24 { background-position: -576px -960px; }
+```
