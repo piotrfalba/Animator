@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Animator Plugin</title>
+	<link rel="stylesheet" href="assets/styles/reset.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="assets/styles/main.css" type="text/css" media="screen">
+	<script src="assets/javascripts/libraries/jquery.js" type="text/javascript"></script>
+	<script src="assets/javascripts/animator.js" type="text/javascript"></script>
+	<script src="assets/javascripts/main.js" type="text/javascript"></script>
+	<script>
+	
+		$(document).ready(function() {
+				
+			var monster = $('#monster').animator();
+			
+			monster.define({
+				name: 'roarOpen',
+				addClass: null,
+				start: 1,
+				end: 12,
+				step: 1,
+				interval: 45
+			});
+			
+			monster.define({
+				name: 'roarClose',
+				addClass: null,
+				start: 12,
+				end: 24,
+				step: 1,
+				interval: 45
+			});
+			
+			$('#monster').on('mouseenter', function() {
+				monster.roarOpen.play();
+			});
+			
+			$('#monster').on('mouseleave', function() {
+				monster.roarClose.play();
+			});
+			
+		});
+		
+	</script>
+</head>
+<body>	
+	
+	<div id="monster"></div>
+	
+</body>
+</html>
